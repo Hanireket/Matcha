@@ -1,0 +1,56 @@
+.container {
+    margin-top: 500px;
+    margin-bottom: 500px;
+    height: 500px;
+    background: purple;
+    
+    
+    /* flex y flexbox son lo mismo. a fuerzas debes poner
+    un display: flex */
+    
+    
+    display: flex;
+
+    /* recuerda que el column, invierten los ejes vertical y horizontal
+    flex-direction: row;
+    flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: column-reverse; */
+
+
+
+     /*flex-wrap: nowrap;  deja fijo los elementos sin 
+     importar que se achique la pantalla
+    flex-wrap: wrap; cuando se achica la pantalla, los elementos
+    que no entran en el marco se alienan en una nueva fila
+    flex-wrap: wrap-reverse; lo mismo que el anterior, pero se alinean de abajo
+   a arriba. Raro de usar pero nunca sabes */
+
+
+
+   /* acomoda los elementos en el eje horizontal 
+   justify-content: center;
+   justify-content: flex-start;
+   justify-content: flex-end;
+   justify-content: space-around;
+   justify-content: space-between;
+   justify-content: space-evenly; */
+
+
+
+
+    /* acomoda los elementos en el eje verticla
+    align-items: center; */
+
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.container div {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    background: black;
+    color: aliceblue;
+}

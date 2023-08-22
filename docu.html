@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="flex.css">
+    <title>Document</title>
+</head>
+<body>
+ 
+<!-- Clase de Programacion en java 
+
+. La programacion crece y se desarrolla gracias a la comunidad. La comunidad es necesaria para esta industria y carrera
+
+. La terminal es la forma mas rápida de comunicarte con el procesador
+
+. vsc "Control + j" abre la terminal
+
+. pwd, print walking directory
+
+. ls, enlistar
+
+. cd, change directory
+
+. cd .., regresa a la carpeta superior a la actual que estas
+
+. clear, limpia la terminal
+
+. mkdir, make directory
+
+. touch, crea un archivo (probablamente solo crea .txt, .html y .css)
+
+. De preferencia escribe todo en minúsculas para que no erres al momento de escribir los comandos
+
+. ¿que es modular? ¿que es modularizacion? lo veremos más adelante
+
+
+
+HTML
+
+
+. !, te da todo el código de raíz 
+
+. html:5, te da lo mismo que el punto anterior
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+. html te genera una estructura para tu proyecto
+
+. <!DOCTYPE html>, se refiere a la version de html que usas; en este caso es html:5. Existen diferentes versiones de html, varias mas antiguas que esta
+
+. <> </>, sintaxis usual del html; su anatomia básica. Aunque existen etiquetas especiales que no requieren cierre (</>)
+
+. El elemento=Etiqueta
+
+Elementos grupales 
+<div> 
+    <img src="" alt="">
+    <section>
+
+    
+    </section>
+</div>
+
+
+ Elementos lineales , etiquetas que autocierran
+
+<img src="" alt=""/>
+<hr/>
+<br/>
+
+. "selecionar codigo, contrl k y contrl c", para seleccionar un codigo y volverlo comentario
+
+ 
+CSS
+
+. Cascade StyleSheet, es lo que significa css -->
+    
+
+
+<!-- Elementos grupales -->
+
+<div> 
+    <img src="" alt="">
+    <section>
+
+    
+    </section>
+</div>
+
+
+<!-- Elementos lineales -->
+
+<img src="" alt=""/>
+<hr/>
+<br/>
+
+
+<!-- encabezados -->
+<!-- NO PUEDE HABER DOS H1 EN UNA MISMA PAGINA PARA RESPETAR LA ESTRUCTURA. los demas los puedes utilizar con mayor libertad -->
+<h1>h1</h1>
+<h2>h2</h2>
+<h3>h3</h3>
+<h4>h4</h4>
+<h5>h5</h5>
+<h6>h6</h6>
+
+<h1>Build your blog. Build your business.</h1>
+<p>Instantly publish articles, drive more traffic, grow your email list, and see your blog’s impact on sales.</p>
+
+<form action="">
+    <input type="text">
+    <input type="number">
+    <input type="password">
+    <input type="date">
+</form>
+
+
+
+<p>
+    Start publishing today with a 
+    <strong>free 7-day trial.</strong>
+    <br>
+    <strong>No credit card</strong> 
+    required.
+</p>
+
+
+<p>
+    "Start publishing today with a" 
+    <b>free 7-day trial.</b>
+    <br>
+    <strong>No credit card</strong> 
+    "required."
+</p>
+
+<!-- Elementos semanticos -->
+
+<!-- Forma de dividir antiguamente -->
+
+<div class="BarNav">
+    <div class="ContainerLogo">
+        <img src="" alt="">
+    </div>
+
+    <div class="items">
+        <li></li>
+        <li></li>
+        <li></li>
+    </div>
+<br>
+    <div class="ContainerCTA">
+        <input type="button">
+    </div>
+</div>
+
+<!-- Nueva forma de dividir -->
+
+<header>
+    <div>
+        <img src="" alt="">
+    </div>
+
+    <nav>
+        <ol>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+        </ol>
+    </nav>
+    
+    <div>
+        <button>btn1</button>
+        <button>btn2</button>
+    </div>
+</header>
+
+<!-- Nombres más amigables para divisiones -->
+
+<header></header>
+<nav></nav>
+<main></main>
+<aside></aside>
+<section></section>
+<article></article>
+<footer></footer>
+
+<!-- Listas ordenadas -->
+
+<ol>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ol>
+
+<!-- Listas no ordenadas -->
+
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+
+
+
+<!-- el id es un nombre que no puedes repetir, 
+    el class te permite repetirlo
+    esto sirve para afectar en el css a los elementos
+    de diferente manera.
+    Los id, servirian si tienes muchos de la misma etiqueta
+    pero no quieres afectarlos del mismo modo a todos
+    los class, lo contrario, si un grupo de etiquetas 
+    los quieres afectar igual, les pones la misma clase.
+    Debido a eso es mas comdo usar class-->
+
+    <!-- Jerarquia de identificadores
+        nombre del elemento
+        id
+        class -->
+
+<header id="header" class="header">
+    <a href="/">
+        <img src="" alt="logo">
+    </a>
+    <nav>
+        <ul>
+            <li><a href="/">Plataform</a></li>
+            <li><a href="/">Pricing</a></li>
+            <li><a href="/">Customers</a></li>
+            <li><a href="/">Resources</a></li>
+            <li><a href="/">About</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <a href="">Sign in</a>
+        <button>Start free trial</button>
+
+        <button>Sign In</button>
+        <button>Start free trial</button>
+    </div>
+    
+
+</header>
+
+<!-- CSS -->
+
+/* Selector con nombre del elemento */
+
+header {
+    background: red;
+}
+
+/* Selector con id */
+
+#header {
+    background: blue;
+}
+
+/* Selector con class */
+
+.header {
+    background: purple;
+}
+
+
+<!-- Camel case    containerHeaderBox -->
+<!-- Snake case    container-header-box -->
+
+
+/* top rigth botton left */
+    margin: 50px 60px 100px 90px
+    /* top/bottom rigth/left */
+    margin: 50px 100px
+    /* all margins */
+    margin: 100px
+
+    <!-- EL padding funciona igual que el margin -->
+
+<!-- Flexbox -->
+
+<div class="container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <!-- <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div> -->
+</div>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+.header > * {
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;
+    height: 100%;
+    line-height: 45px;
+    text-align: center;
+    
+  }
+  
+  .header {
+  background: purple;
+  }
+  
+  /* Este es mejor que "el otro" ya que afecta a las etiquetas
+  dentro de ese contenedor, por lo que si otras comparten el mismo
+  nombre, no son afectadas por estas */
+  .header .navbar ul li {
+    display: inline-block;
+  }
+  
+  /* el otro */
+  li {
+    display: inline;
+  }
+  
+  .logo img {
+    width: 15%;
+  }
+  
+  .navbar {
+    width: 69%;
+    text-align: center;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #025157;
+    font-weight: 500;
+  }
+  
+  .actions {
+    width: 15%;
+    text-align: right;
+    font-size: 25px;
+  }
+  
+  .actions a {
+    text-decoration: none;
+    color: #d7f79b;
+    font-weight: 800;
+  }
+  
+  main {
+    margin: 200px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #46484c;
+    font-size: 50px;
+  }
+  
+  p {
+    color: #8b8b8bcc;
+    font-family: verdana;
+    font-size: 20px;
+  }
+  
+  strong {
+    color: #3d3d3dcc;
+  }
+  
+  form {
+  }
+  
+  button {
+    color: #fff;
+    background-color: #025157;
+  }
+  
+  .section {
+    display: inline-block;
+  }
