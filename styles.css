@@ -76,11 +76,17 @@ body {
     background-color: #025157;
   }
   
+  main section img {
+    width: 400px;
+
+  }
+
   .containerPromo {
     display: flex;
     justify-content: center;
-    height: 400px;
+    height: auto;
     width: 100%;
+    padding: 100px 0;
   }
 
   .containerPromo video { 
@@ -90,7 +96,6 @@ body {
   }
 
   .containerPromo article {
-    background: purple;
     display: flex;
     flex-direction: column;
     width: 600px;
@@ -100,36 +105,112 @@ body {
 
   
 .features {
+  background-color: rgb(2, 65, 70);
     display: grid;
     /* grid-template-columns: 300px 300px; */
 
     /* reapeat(cantidad de columnas, tamaño) 
     grid-template-columns: repeat(3, 300px);*/
 
-    padding-top: 100px;
+    padding: 100px 0;
 
     grid-template-columns: 1fr 1fr;
 
     grid-template-rows: repeat(2, 1fr)
+
+    
 }
 
 .features article {
     width: ;
-    height: 350px;
-    margin: 11px 40px;
-    background: green;
+    height: 250px;
+    margin: 10px 20px;
+    background: #fffbf7;
+    display: flex;
+    align-items: center;
+
+}
+
+
+/* @media (breakpoint){}
+
+dispositivos moviles en vista viewport
+@media (max-width: 575px) {}
+
+dispositivos pequeños en vista landscape
+@media (min-width: 576px and max-width: 767px) {}
+
+dispositivos medianos tablets
+@media (min-width: 768px and max-width: 991px) {}
+
+dispositivos grandes desktop
+@media (min-width: 992px and max-width: 1199px) {}
+
+dispositivos extra grandes monitores grandes, tvs
+@media (min-width: 1200 px) {}
+
+
+
+
+ */
+
+
+
+@media (max-width: 575px) {
+
+  .navbar, .actions {
+
+    display: none;
+
+  }
+
+  .containerPromo {
+
+    text-align: center;
+    /* No es necesario poner display: flex porque el original
+    ya lo tenia implicado, aunque lo puedes poner si quieres
+    pero seria repetir codigo */
+    flex-direction: column;
+
+  }
+
+  .containerPromo article {
+    width: auto;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
 
 
-/* Tarea, 
 
-hacer que el nav y el promo se vea como la pagina original de matcha
 
-hacer con grid una seccion con tarjetas que esten en una cuadricula
 
-Terminar el reto 3 de la sesion 4 y subirlo a slack
+
+
 
 
 */
