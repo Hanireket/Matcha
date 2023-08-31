@@ -41,6 +41,10 @@ body {
 }
 
 .navbar {
+    width: 100%;
+ text-align: center;
+ color: #025157;
+ font-weight: 500;
     background-color: #fffbf7;
 }
 
