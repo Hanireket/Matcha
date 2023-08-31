@@ -1,216 +1,183 @@
 body {
-  background-color: #fffbf7;
-  margin: 0;
-  padding: 0;
+    background: burlywood;
+    margin: 0;
+    padding: 0;
 }
 
-.header {
-    background: purple;
-    display: flex;
-    justify-content: space-between;
-    padding: 25px ;
+.header > * {
+ display: inline-block;
+ font-size: 16px;
+ vertical-align: middle;
+ height: 100%;
+ line-height: 45px;
 }
 
-.logo img { 
-    width: 800px;
-    height: 400px;
+
+li {
+
+    display: inline;
 }
 
-.navbar ul {
+.logo > img {
+    width: 15%;
     
-    width: 800px;
-    display: flex;
-    justify-content: space-between;
-
+  }
+  
+.navbar {
+ width: 100%;
+ text-align: center;
+ color: #025157;
+ font-weight: 500;
 }
 
-.navbar ul li { 
-    display: inline-block;
-    font-size: 1.7rem;
-    
+.navbar ul > li > a {
 
-}
+text-decoration: none;
 
-.navbar ul li a {
-    text-decoration: none;
-    color: black;
-}
 
+}  
+  
 .actions {
-    display: inline-block;
+    width: 15%;
+   
+  }
+
+.actions > a {
     text-align: right;
-    font-size: 25px;
-}
-
-.actions a {
+    font-size: 14px;
     text-decoration: none;
-    color: #d7f79b;
-    font-weight: 800;
-}
+    font-weight: 600;
+}  
 
- main {
-    margin: 25px 0px;
+main {
+
+    margin-top: 185px;
     text-align: center;
-  }
-  
-  h1 {
-    color: #46484c;
-    font-size: 50px;
-  }
-  
-  p {
-    color: #8b8b8bcc;
-    font-family: verdana;
-    font-size: 20px;
-  }
-  
-  strong {
-    color: #3d3d3dcc;
-  }
-  
-  form {
-  }
-  
-  button {
-    color: #fff;
-    background-color: #025157;
-  }
-  
-  main section img {
-    width: 400px;
-
-  }
-
-  .containerPromo {
-    display: flex;
-    justify-content: center;
-    height: auto;
-    width: 100%;
-    padding: 100px 0;
-  }
-
-  .containerPromo video { 
-    width: auto;
-    height: auto;
-    margin: 20px;
-  }
-
-  .containerPromo article {
-    display: flex;
-    flex-direction: column;
-    width: 600px;
-    height: auto;
-    margin: 20px;
-  }
-
-  
-.features {
-  background-color: rgb(2, 65, 70);
-    display: grid;
-    /* grid-template-columns: 300px 300px; */
-
-    /* reapeat(cantidad de columnas, tamaño) 
-    grid-template-columns: repeat(3, 300px);*/
-
-    padding: 100px 0;
-
-    grid-template-columns: 1fr 1fr;
-
-    grid-template-rows: repeat(2, 1fr)
-
-    
 }
 
-.features article {
-    width: ;
-    height: 250px;
-    margin: 10px 20px;
-    background: #fffbf7;
+
+h1{
+  color: #025157;
+  font-family: "Alegreya", serif;
+  font-size: 60px;
+  margin-bottom: 24px;
+  font-weight: 400;
+  line-height: 1.2px;
+}
+
+
+input {
+  border: 1px solid #b6b6b6;
+  padding: 6px 20px;
+  width: 60%;
+  max-width: 250px;
+  height: 100%;
+  border-radius: 8px;
+  overflow: visible;
+}
+
+button{ 
+  cursor: pointer;
+  background-color: #025157;
+  color: #fff;
+  border-radius: 8px;
+  padding: 6px 20px;
+  margin-left: -10px;
+}
+
+
+.imgCap{
+
+  width: 200px;
+
+}
+
+.container-promo {
+    /* background: red;
+    height: 400px; */
+   display: flex;
+   margin: 100px auto;
+   width: 70%;
+   align-items: center; 
+}
+
+.container-promo > video {
+
+    height: 300px;
+    width: 50%;
+}
+
+ .container-promo > article {
+    
+    height: 300px;
+     width: 50%;
+ }
+
+
+
+ .features {
+
+  background-color: #025157;
+  padding: 5% 10%;
+  display: grid;
+  grid-template: repeat(2, 330px) / repeat(2, 1fr);
+ }
+
+ .features > article {
+  
+  margin-bottom: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color: #fff;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+ }
+
+/* los elementos ya tienen displays definidos por si mismos pero en css puedo cambiar el tipo de display a cualquier elemento  */
+/* Extra postwork  que es un display ?   que es display inline  y display block y tratar de dejar su header como esta en el diseño de matcha*/
+
+
+.success-stories {
+    background-color: #a1d683;
+    padding: 5% 15%;
     display: flex;
     align-items: center;
-
-}
-
-
-/* @media (breakpoint){}
-
-dispositivos moviles en vista viewport
-@media (max-width: 575px) {}
-
-dispositivos pequeños en vista landscape
-@media (min-width: 576px and max-width: 767px) {}
-
-dispositivos medianos tablets
-@media (min-width: 768px and max-width: 991px) {}
-
-dispositivos grandes desktop
-@media (min-width: 992px and max-width: 1199px) {}
-
-dispositivos extra grandes monitores grandes, tvs
-@media (min-width: 1200 px) {}
-
-
-
-
- */
-
-
-
-@media (max-width: 575px) {
-
-  .navbar, .actions {
-
-    display: none;
-
+    justify-content: space-around;
   }
-
-  .containerPromo {
-
-    text-align: center;
-    /* No es necesario poner display: flex porque el original
-    ya lo tenia implicado, aunque lo puedes poner si quieres
-    pero seria repetir codigo */
-    flex-direction: column;
-
+  
+  .success-stories .overview {
+    flex: 2;
+    padding-right: 100px;
   }
-
-  .containerPromo article {
-    width: auto;
+  
+  .success-stories .overview h2 {
+    font-family: "Alegreya", serif;
+    font-size: 51px;
+    line-height: 61px;
+    color: #025157;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-*/
+  
+  .success-stories .overview p {
+    color: #343434;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  
+  .success-stories .overview button {
+    font-size: 14px;
+    padding: 12px 12px 6px 12px;
+    border-radius: 8px;
+    height: 45px;
+    font-weight: 600;
+    margin-left: 0;
+  }
+  
+  .success-stories .overview img {
+    width: 500px;
+    max-width: 100%;
+  }
