@@ -1,54 +1,73 @@
-<!-- pricing.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Aquí va información importante pero no visible dentro del navegador -->
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width,initial-scale=1.0,user-scalable=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ruta relativa -->
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- ruta absoluta -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Matcha - Pricing</title>
-    <!-- Agregamos la nueva página de estilos -->
-    <link rel="stylesheet" type="text/css" href="./princing.css" />
+    
+    <title>Matcha</title>
   </head>
   <body>
+    <!-- Esto es lo que se verá en el navegador web -->
+    <!-- identificadores son 3 el nombre del elemento, id y class -->
+    <!-- <header class="header">
+      <a href="/" class="logo">
+        <img src="" alt="logo" />
+      </a>
+      <nav class="navbar">
+        <ul>
+          <li><a href="/">Plataform</a></li>
+          <li><a href="/">Pricing</a></li>
+          <li><a href="/">Customers</a></li>
+          <li><a href="/">Resources</a></li>
+          <li><a href="/">About</a></li>
+        </ul>
+      </nav>
 
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #fffbf7;">
-        <div class="container-fluid">
-            <a class="navbar-brand logo" href="./index.html">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhyiH6ahN03XkTsUx86WNgTptUtWbenqFdEoRl2GMLKCAp3dA7UFL1l-2hI1jrEgxIZ2s&usqp=CAU" alt="Matcha" />
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./index.html">Platform</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pricing.html">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Customers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Resources</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About us</a>
-                    </li>
-                </ul>
+      <div class="actions">
+        <a href="">Sign in</a>
+        <button>Start free trial</button>
+      </div>
+    </header> -->
 
-                <div class="actions">
-                    <a href="#">Sign In</a>
-                    <button>Start Free Trial</button>
-                </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top " style="background-color: #fffbf7;">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="./index.html">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhyiH6ahN03XkTsUx86WNgTptUtWbenqFdEoRl2GMLKCAp3dA7UFL1l-2hI1jrEgxIZ2s&usqp=CAU" alt="Matcha"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Platform</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Customers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Resources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+          </ul>
+
+            <div class="actions">
+              <a href="#">Sign In</a>
+              <button>Start Free Trial</button>
             </div>
         </div>
+      </div>
     </nav>
 
     <main class="main">
@@ -78,9 +97,9 @@
         </div>
       </div>
           
-      </main>
+    </main>
 
-      <section class="faq">
+    <section class="faq">
         <div class="container">
           <div class="row">
             <div class="col">
@@ -98,7 +117,7 @@
                       Getting started is easy! Simply
                       <a href="#">create a free account</a> to start using the Platform and
                       exploring the library. Want to start publishing? When you click the
-                      “Publish” button on a piece of licensed content, you’ll be prompted to
+                      "Publish" button on a piece of licensed content, you'll be prompted to
                       input your credit card information before continuing. Questions?
                       <a href="#">Reach out to our customer support team for assistance!</a>
                     </div>
@@ -122,8 +141,8 @@
                       content to provide you with a low-cost supply of professionally
                       written articles that are proven to be engaging. It eliminates the
                       headache and time of producing your own blog articles, allowing you to
-                      get back to more pressing matters. When we say, “professional
-                      publishers”, we mean it. Currently, our library includes articles from
+                      get back to more pressing matters. When we say, "professional
+                      publishers", we mean it. Currently, our library includes articles from
                       the following publishers: Oxygen Magazine, Better Nutrition, Popular
                       Science, Field & Stream, Coach, RootsRated, Business2Community,
                       MoneyNing, YourMoneyGeek Working Mother, Clean Eating, and Healthy
@@ -167,10 +186,6 @@
       </section>
 
 
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  </body>
-</html>
+    </body>
