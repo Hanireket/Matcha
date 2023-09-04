@@ -1,0 +1,35 @@
+/**Aqui va la info de paletas de colores y tipografias**/
+
+
+/**elementos de colores**/
+
+$dark-green-title: #025157;
+
+$dark-green-text: #135359;
+
+$white: #ffffff;
+
+$gray: #4a4a4a;
+
+$ligth-gray: #979797;
+
+$ligth-green: #67b54b;
+
+
+
+/**Fuentes**/
+
+$font-title: "Alegreya", serif;
+
+
+
+
+/**Aqui es donde lo empiezas a implementar**/
+
+/**Palceholders**/
+
+%base-title {
+    font-family: $font-title;
+    color: $dark-green-title;
+}
+
